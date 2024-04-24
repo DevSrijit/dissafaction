@@ -170,7 +170,7 @@ export default function Component() {
             binding upon their posting. 9.2 Severability: If any part of these
             Terms is found to be invalid or unenforceable, the remaining
             portions shall continue in full force and effect, reiterating the
-            enduring relevance of the Artist&apos's life and works.
+            enduring relevance of the Artist&apos;s life and works.
           </p>
         </div>
         <div className="space-y-4">
@@ -178,7 +178,7 @@ export default function Component() {
             By continuing to access this document, you affirm that you have
             read, understood, and agree to be bound by the above Terms and
             Conditions. You recognize the importance of revisiting and
-            thoroughly understanding Vincent van Gogh's life and legacy.{" "}
+            thoroughly understanding Vincent van Gogh&apos;s life and legacy.{" "}
           </p>
         </div>
       </div>

@@ -7,11 +7,6 @@ const playfair_display = Playfair_Display({
   display: 'swap',
   variable: '--font-playfair_display',
 })
-const newsreader = Newsreader({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-newsreader',
-})
 
 export const metadata = {
   title: 'Terms & Conditions',
@@ -21,7 +16,7 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <body className={playfair_display.variable + newsreader.variable}>
+      <body className={playfair_display.variable}>
         {children}
       </body>
     </html>
