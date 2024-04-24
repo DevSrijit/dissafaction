@@ -1,6 +1,6 @@
 import { Playfair_Display } from 'next/font/google'
 import { Newsreader } from 'next/font/google'
-import './globals.css'
+import '../globals.css'
 
 const playfair_display = Playfair_Display({
   subsets: ['latin'],
@@ -12,6 +12,11 @@ const newsreader = Newsreader({
   display: 'swap',
   variable: '--font-newsreader',
 })
+
+export const metadata = {
+  title: 'Terms & Conditions',
+  description: 'Avan',
+}
 
 export default function Layout({ children }) {
   return (

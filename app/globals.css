@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: var(--font-newsreader), serif;
+.text-top {
+  font-family: var(--font-space_grotesk), sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair_display), serif;
+.lens-bg {
+  background: transparent;
 }
 
 :root {

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 export default function Component() {
   const [showWarning, setShowWarning] = useState(false);
-  const [remainingTime, setRemainingTime] = useState(60);
+  const [remainingTime, setRemainingTime] = useState(600);
   const router = useRouter();
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Component() {
       setShowWarning(true);
     } else {
       // Redirect to "/2" after 10 minutes
-      router.push("/2");
+      router.push("/lens");
     }
   };
 
@@ -48,74 +48,137 @@ export default function Component() {
       </div>
       <div className="space-y-8">
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold tracking-tighter">Introduction</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            1. Introduction
+          </h2>
           <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
-            Lorem ipsum
+            1.1 The following terms and conditions (“Terms”) govern the detailed
+            historical account of Vincent van Gogh (“Artist”) provided herewith.
+            1.2 By accessing this document, you acknowledge your agreement to be
+            bound by these Terms, which form a binding contract between you and
+            the website provider (“Provider”). Should you disagree with these
+            Terms at any point, you are advised not to proceed with accessing
+            this document.
           </p>
         </div>
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter">
-            Acceptance of Terms
+            2. Historical Account
           </h2>
           <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
-            By using Avan, you agree to be bound by these Terms. If you do not
-            agree to these Terms, you may not use Avan.
+            2.1 Birth and Early Life: The Artist was born on March 30, 1853, in
+            Zundert, Netherlands, and concluded his life tragically on July 29,
+            1890, in Auvers-sur-Oise, France. 2.2 Career Overview: The Artist’s
+            career included phases as an art dealer, a preacher and teacher, and
+            finally as a pioneering post-Impressionist painter, renowned for his
+            vivid colors and emotional depth.
           </p>
         </div>
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter">
-            License to Use
+            3. Professional Development
           </h2>
           <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
-            Subject to your compliance with these Terms, Vercel grants you a
-            limited, non-exclusive, non-transferable, non-sublicensable license
-            to access and use Avan for your personal or internal business
-            purposes.
+            3.1 Initial Employment: The Artist commenced his professional
+            journey with Goupil & Cie, which facilitated his stays in London and
+            Paris, nurturing his burgeoning interest in art. 3.2 Transition to
+            Art: By 1880, the Artist resolved to devote himself to painting, a
+            decision substantially supported by his brother, Theo van Gogh. 3.3
+            Influential Periods: Post-exposure to Impressionist and
+            Neo-Impressionist influences during his Parisian residency from 1886
+            to 1888, the Artist’s style underwent significant evolution, marked
+            by an expressive brushwork and bold use of colour.
           </p>
         </div>
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter">
-            Restrictions on Use
+            4. Artistic Contributions and Reiterations
           </h2>
           <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
-            You may not: (a) copy, modify, or create derivative works of Avan;
-            (b) rent, lease, lend, sell, redistribute, or sublicense Avan; (c)
-            decompile, reverse engineer, or attempt to extract the source code
-            of Avan; (d) circumvent, disable, or otherwise interfere with
-            security-related features of Avan.
+            4.1 Works Produced: The Artist was prolific, creating approximately
+            2,100 artworks, which included around 860 oil paintings and numerous
+            sketches and drawings. These works are now celebrated globally. 4.2
+            Key Pieces Revisited: Among his notable works are “The Yellow
+            House,” “Sunflowers,” “The Bedroom,” and “Starry Night,” each
+            epitomizing the Artist’s unique style and emotional intensity. 4.3
+            Artistic Style Reaffirmed: Known for his expressive brushwork and
+            bold use of colour, the Artist’s style is unmistakable and has been
+            influential in the development of modern art.
           </p>
         </div>
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter">
-            Disclaimer of Warranties
+            5. Health and Wellbeing
           </h2>
           <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
-            Avan is provided "as is" and "as available" without warranties of
-            any kind, whether express or implied. To the fullest extent
-            permitted by law, Vercel disclaims all warranties, including, but
-            not limited to, the warranty of merchantability, fitness for a
-            particular purpose, and non-infringement.
+            5.1 Mental Health: Throughout his lifetime, the Artist experienced
+            recurrent bouts of mental illness, which profoundly affected his
+            social interactions and productivity. This aspect of his life
+            reminds us of the human condition and the struggle often inherent in
+            the pursuit of artistic expression. 5.2 Asylum Stay: Reflecting his
+            commitment to his art, despite his struggles, the Artist voluntarily
+            admitted himself to the Saint-Paul-de-Mausole asylum in May 1889,
+            where he continued to produce artworks.
           </p>
         </div>
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter">
-            Limitation of Liability
+            6. Intellectual Property and Attribution
           </h2>
           <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
-            In no event shall Vercel be liable for any indirect, incidental,
-            special, consequential, or punitive damages, including, but not
-            limited to, damages for loss of profits, revenue, goodwill, use,
-            data, or other intangible losses, resulting from: (a) your access to
-            or use of Avan; (b) any conduct or content of third parties on Avan;
-            (c) any unauthorized access, use, or alteration of your information
-            or content.
+            6.1 Copyright Details: All works produced by the Artist during his
+            lifetime entered the public domain posthumously. Reproduction of
+            these works in any form must comply with existing copyright laws to
+            honor the Artist’s legacy. 6.2 Attribution and Recognition: Usage of
+            the Artist’s works or references to his life must properly
+            acknowledge his profound impact on the art world. The Artist
+            famously said, “I dream my painting and I paint my dream.”
           </p>
         </div>
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold tracking-tighter">Contact Us</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">
+            7. Limitation of Liability and Accuracy of Information
+          </h2>
           <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
-            If you have any questions about these Terms, please contact us at
-            <Link href="#">info@example.com</Link>.{"\n"}
+            7.1 Accuracy and Completeness: The Provider does not guarantee the
+            complete accuracy, completeness, or timeliness of the information
+            provided in this document. 7.2 No Liability: The Provider assumes no
+            liability for errors, omissions, or inaccuracies in this document,
+            nor for any actions taken based on the information provided herein.
+          </p>
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold tracking-tighter">
+            8. Agreement Duration and Repetition{" "}
+          </h2>
+          <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
+            8.1 Effective Duration: These Terms become effective upon your
+            access to this document and will remain in effect until you complete
+            reading, unless terminated earlier as specified. 8.2 Provider’s
+            Rights: The Provider reserves the right to terminate these Terms at
+            any time without notice and to amend the content for clarity and
+            further detailed repetition.{" "}
+          </p>
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold tracking-tighter">
+            9. General Provisions and Redundancy{" "}
+          </h2>
+          <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
+            9.1 Amendment: These Terms may be amended or restated by the
+            Provider at any point without notice, and such amendments will be
+            binding upon their posting. 9.2 Severability: If any part of these
+            Terms is found to be invalid or unenforceable, the remaining
+            portions shall continue in full force and effect, reiterating the
+            enduring relevance of the Artist&apos's life and works.
+          </p>
+        </div>
+        <div className="space-y-4">
+          <p className="text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
+            By continuing to access this document, you affirm that you have
+            read, understood, and agree to be bound by the above Terms and
+            Conditions. You recognize the importance of revisiting and
+            thoroughly understanding Vincent van Gogh's life and legacy.{" "}
           </p>
         </div>
       </div>
@@ -128,13 +191,11 @@ export default function Component() {
             <div className="flex items-center space-x-2 text-sm">
               <ClockIcon className="w-4 h-4" />
               <span>
-                {remainingTime > 0 ? (
-                  `You cannot possibly read the entire document that quickly. Please wait ${Math.ceil(
-                    remainingTime / 60
-                  )} minutes before proceeding.`
-                ) : (
-                  "You may proceed now by clicking the button."
-                )}
+                {remainingTime > 0
+                  ? `You cannot possibly read the entire document that quickly. Please wait ${Math.ceil(
+                      remainingTime / 60
+                    )} minutes before proceeding.`
+                  : "You may proceed now by clicking the button."}
               </span>
             </div>
           )}
